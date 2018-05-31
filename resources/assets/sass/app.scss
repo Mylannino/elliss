@@ -1,0 +1,359 @@
+
+// Fonts
+//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: $main-color;
+}
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:hover{
+  color: $wit-color;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: $wit-color;
+}
+.mijn-card{
+  border-radius: 15px;
+  background-color: transparent;
+}
+.mijn-card-body{
+  background-color: $sub-color;
+  color: $wit-color;
+  border-radius: 15px;
+}
+
+//bee3d slide show css syles
+
+.bee3D--parent{
+  margin-top: 275px;
+}
+.bee3D--slide{
+  background-color: #ffffff;
+  color: #fff;
+  overflow: hidden;
+  height: auto;
+  width: 380px;
+  margin-left: -190px;
+  border-radius: 15px;
+}
+.bee3D--slide__active{
+  z-index: 10;
+}
+.bee3D--slide a.knop{
+  background-color: red;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.product-image{
+  width: 380px;
+  height: 380px;
+}
+.slide-pro-naam{
+  color: #3b3338;
+}
+.drogist-logo{
+  width: 100px;
+  padding: 10px 1px;
+}
+.product-aanbieding{
+  background-color: red;
+  padding: 7px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 575.98px) {
+  .bee3D--parent{
+    margin-top: 210px;
+  }
+  .bee3D--slide{
+    width:320px;
+  }
+  .bee3D--slide{
+    width: 250px;
+    height: auto;
+    margin-left: -125px;
+  }
+  .product-image{
+    width: 250px;
+    height: 250px;
+  }
+}
+
+//@media all and(max-width: 576px){
+//  .bee3D--parent{
+//    margin-top: 210px;
+//  }
+//  .bee3D--slide{
+//    width:320px;
+//  }
+//  .bee3D--slide{
+//    width: 250px;
+//    height: auto;
+//    margin-left: -125px;
+//  }
+//  .product-image{
+//    width: 250px;
+//    height: 250px;
+//  }
+//}
+
+
+//Mijn custum classen
+.grijstext{
+  color: $grijs-color;
+}
+
+//Welcome page
+.full-height{
+  position: relative;
+  background-image: url("/img/Elliss-01.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.img-fluid{
+  margin-top: -90px;
+}
+//.welcome-overlay{
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//  background-color: #212121;
+//  opacity: .5;
+//
+//}
+
+
+//Registeren
+.register-login > a, .main-knop{
+  display: inline-block;
+  background-color: $main-color;
+  color: $wit-color;
+  padding: 10px;
+  width: 185px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.main-knop-rond{
+  height: 150px;
+  width: 150px;
+  background-color: $wit-color;
+  color: $main-color;
+  border-radius: 50%;
+  border: 10px solid $main-color;
+}
+.register-inhoud{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.main-card{
+  background-color: transparent;
+  border: none;
+  padding-top: 50px;
+}
+//information panel
+.help-icon{
+  background-color: $sub-color;
+  height: 64px;
+  width: 64px;
+  color: $wit-color;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align:center;
+}
+.information-panel{
+  position: relative;
+  top:20px;
+  left: 0;
+  background-color: $main-color;
+  border-radius: 15px;
+  display: none;
+}
+.information-panel .pijltje{
+  position: absolute;
+  top: -10px;
+  left: 25px;
+  background-color: $main-color;
+  padding: 10px;
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.information-panel-body{
+  color: $wit-color;
+}
+.information-panel-body ul{
+  list-style-type: none;
+  font-size: 1.1rem;
+}
+
+//gebruiker Dashboard****************8
+
+//Zoeken panel
+.zoeken-wrapper{
+  background-color: $sub-color;
+  width: 100%;
+}
+.productshow{
+  margin: 0 -15px 25px;
+  background-color: #fff;
+  padding: 25px 0;
+  border-bottom: 5px solid $main-color;
+}
+.productshow .img-fluid{
+  margin: 0;
+}
+.productshow .product-foto{
+  position: relative;
+  overflow: hidden;
+}
+.productshow .aanbieding{
+  position: absolute;
+  bottom: 15%;
+  right: -30%;
+  width: 100%;
+  padding: 10px;
+  background-color: $main-color;
+  color: #fff;
+  box-shadow: -10px -10px 30px -10px #2d282a;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+//Hoe werkt het info balk
+
+.hoe-werkt{
+  display: none;
+  background-color: $main-color;
+  margin: 0px -15px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+}
+.hoe-werkt-pijl{
+  padding: 10px;
+  display: inline-block;
+  transform: rotate(45deg);
+  background-color: $main-color;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+}
+
+
+//Category's
+
+.main-category-knop{
+  background-color: $main-color;
+  color: $wit-color;
+  border-radius: 10px;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.main-category-knop:hover{
+  background-color: $sub-color;
+  padding-right: 5px;
+}
+
+.category-info-ballon{
+  position: relative;
+  padding: 15px;
+  background-color: $sub-color;
+  color: $wit-color;
+  margin: 25px 0 10px;
+  border-radius: 50px;
+
+}
+.category-info-ballon-pijltje{
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  padding: 10px;
+  background-color: $sub-color;
+}
+.product-type{
+  position: relative;
+  border: 5px solid $main-color;
+  border-radius: 10px;
+  background-color: $wit-color;
+
+}
+.product-type>ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 311px;
+  overflow-y: auto;
+}
+.product-type>ul>li{
+  background-color: $wit-color;
+  padding: 8px;
+  cursor: default;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border-radius: 5px;
+}
+.product-type>ul>li:hover{
+  background-color: #f1b2d5;
+  color: $wit-color;
+  padding-left: 20px;
+}
+
+.product-type-pijltje{
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  padding: 10px;
+  background-color: $main-color;
+  z-index: -1;
+}
+
+//dropdowns menu  style : product filteren
+
+.kies-veld{
+  width: 100% !important;
+  background-color: #ff0090;
+  color: white;
+}
+
+
+//Admin Dashboard
+.success{
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
